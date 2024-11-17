@@ -1,0 +1,127 @@
+﻿<style type="text/css">
+    h2 {
+        color: green;
+        display: flex;
+        justify-content: center;
+        background-color: palegreen;
+        font-size: 20px;
+        height: 30px;
+    }
+
+        h2 a {
+            color: blue;
+            margin-left: 1rem;
+        }
+
+    #search-input{
+ 
+        justify-content:center;
+        
+    }
+   
+    header {
+        background-color: white;
+        border: 5px solid #5486d7;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+        nav ul li {
+            margin-left: 30px;
+            font-size: 1.2rem;
+        }
+
+    ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    nav ul li img {
+        height: 50px;
+    }
+
+    input {
+        width: 700px;
+    }
+
+    #search-button {
+        color: blue;
+        
+    }
+    .vitri {
+        margin-left: 10px;
+        list-style-type: none;
+        display:flex;
+        color:black;
+    }
+        .vitri img {
+            height: 25px;
+        }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Freeship đơn từ 45k, giảm nhiều hơn cùng <a>FreeShip</a><a></a> Xtra</h2>
+        <header>
+            
+            <div class="Logo">
+                <img src="~/Content/image/Ảnh chụp màn hình 2024-10-01 094012.png" />
+
+            </div>
+        
+                <input type="text" id="search-input" placeholder="Freeship đơn hàng từ 45k.... "/>
+                <button id="search-button">Tìm Kiếm</button>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="~/Content/image/Hone.png" />
+                            </a>
+                            <a href="#">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="~/Content/image/Snile.png" />
+                            </a>
+                            <a href="#">Tài Khoản</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="~/Content/image/xedat.png" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="vitri">
+                            <img src="~/Content/image/vitri.png" />
+                        </a>
+                        <a href="#" class="vitri">
+                            Giao đến:Q1, Bến Nghé, Hồ Chí Minh.
+                        </a>
+                    </div>
+                </nav>
+
+        </header>
+    </div>
+        <div>
+            @RenderBody()
+        </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
